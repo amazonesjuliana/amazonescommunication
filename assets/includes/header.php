@@ -2,6 +2,8 @@
     $url = $_SERVER['PHP_SELF'];
     $explode_url = explode("com.br/", $url);
     $pag_atual = $explode_url[1];
+
+    echo $pag_atual;
 ?>
 
 <div class="header">
@@ -12,7 +14,7 @@
     <div class="nav-header">
         <a href="./portifolio.php" <?php if($pag_atual == "portifolio.php"){ ?>class="pag-atual"<?php } ?>>PORTFÓLIO</a>
         <span>|</span>
-        <a href="./sobre.php" <?php if($pag_atual == "sobre.php"){ ?>class="pag-atual"<?php } ?>>SOBRE <?php echo $pag_atual; ?></a>        
+        <a href="./sobre.php" <?php if($pag_atual == "sobre.php"){ ?>class="pag-atual"<?php } ?>>SOBRE</a>        
         <span>|</span>
         <a href="./parceiros.php" <?php if($pag_atual == "parceiros.php"){ ?>class="pag-atual"<?php } ?>>PARCEIROS</a>
         <span>|</span>

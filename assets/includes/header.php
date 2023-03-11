@@ -1,9 +1,9 @@
 <?php
-    $url = $_SERVER['PHP_SELF'];
+    $url = $_SERVER['REQUEST_URI'];
     $explode_url = explode("com.br/", $url);
     $pag_atual = $explode_url[1];
 
-    echo "link: ".$url;
+    echo "link: ".$pag_atual;
 ?>
 
 <div class="header">

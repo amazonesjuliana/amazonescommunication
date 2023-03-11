@@ -1,6 +1,8 @@
 <?php
     $url = $_SERVER['PHP_SELF'];
-    $pag_atual = substr($url,23);
+    $pag_atual = substr($url,28);
+
+    echo $pag_atual;
 ?>
 
 <div class="header">

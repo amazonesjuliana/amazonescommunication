@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'Aida Serifa';
+    src: url('../fonts/AidaSerifa-Condensed.ttf');
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-stretch: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.otf');
+    font-stretch: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Light.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Bold.otf');
+    font-weight: bold;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,17 +38,232 @@ html, body {
 }
 
 @media screen and (min-width: 1024px){
+    /* INICIO DO HEADER */
     .header {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header .logo-header {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .logo-header img {
+        width: 100%;
+    }
+
+    .header .nav-header {
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
 
-    .header .logo-header {
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .header .nav-header a {
+        font-size: 42px;
+        font-family: 'Myriad Pro';
+        font-weight: 500;
+        color: #1b4358;
+        text-decoration: none;
+        transition: all 0.5s;
+        cursor: pointer;
     }
+
+    .header .nav-header span {
+        font-size: 42px;
+        font-family: 'Myriad Pro';
+        font-weight: lighter;
+        color: #dfdfdf;
+        margin: 0 50px;
+    }
+
+    .header .nav-header a:hover, .header .nav-header a:active {
+        transform: scale(1.1);
+        font-weight: bold;
+    }
+
+    .header .nav-header .pag-atual {
+        transform: scale(1.1);
+        font-weight: bold;
+    }
+
+    .header .idiomas-header {
+        width: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header .idiomas-header img {
+        width: 50px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .header .idiomas-header img:hover, .header .idiomas-header img:active {
+        -webkit-filter: drop-shadow(5px 3px 3px #1b4358);
+        filter: drop-shadow(5px 3px 3px #1b4358);
+    }
+     /* FIM DO HEADER */
+
+
+     /* INICIO DA HOME*/
+    .conteudo-home {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .conteudo-home img {
+        width: 100%;
+    }
+
+    .conteudo-home .textos-home {
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        margin-right: 6.2%;
+        margin-bottom: 5.8%;
+        position: absolute;
+    }
+
+    .textos-home p {
+        color: #fff;
+        text-align: end;
+        font-family: "Myriad Pro";
+    }
+
+    #texto-home1 {
+        margin: 0 0 10px 0;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    #texto-home2, #texto-home3 {
+        margin: 0;
+        padding: 0;
+        font-size: 35px;
+    }
+
+    .btn-home {
+        right: 0;
+        bottom: 0;
+        color: #1b4358;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0 6% 2% 0;
+        padding: 10px 30px;
+        position: absolute;
+        border-radius: 30px;
+        text-decoration: none;
+        background-color: #fff;
+        font-family: 'Aida Serifa';
+        transition: all 0.5s;
+    }
+
+    .btn-home:hover, .btn-home:active {
+        filter: drop-shadow(5px 5px 3px #1b4358);
+        -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
+    }
+    /* FIM DA HOME*/
+
+
+    /* INICIO DA TELA SOBRE */
+    .conteudo-sobre {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .conteudo-sobre img {
+        width: 100%;
+    }
+
+    .foto-juju {
+        left: 0;
+        bottom: 0;
+        width: 25%;
+        z-index: 99;
+        position: absolute;
+        margin: 0 0 4% 8.2%;
+    }
+
+    .conteudo-sobre .textos-sobre {
+        left: 0;
+        top: 0;
+        z-index: 99;
+        margin: 11.3% 6% 0 35.2%;
+        position: absolute;
+    }
+
+    .textos-sobre p {
+        color: #1b4358;
+        text-align: justify;
+        font-family: "Myriad Pro";
+    }
+
+    .titulos-sobre {
+        padding: 0;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+    }
+
+    .texto-sobre {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .texto-sobre a {
+        color: #1b4358;
+        text-decoration: none;
+    }
+
+    .icones-sobre {
+        width: 100%;
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .icones-sobre span {
+        width: 100%;
+    }
+
+    .icones-sobre span img {
+        width: 85%;
+    }
+
+    .btn-sobre {
+        right: 0;
+        bottom: 0;
+        color: #1b4358;
+        font-size: 24px;
+        font-weight: 500;
+        border: 1px solid #1b4358;
+        margin: 0 6% 2% 0;
+        padding: 10px 10px;
+        position: absolute;
+        border-radius: 2px;
+        text-decoration: none;
+        background-color: #fff;
+        font-family: 'Aida Serifa';
+        transition: all 0.5s;
+        font-weight: 600;
+    }
+
+    .btn-sobre:hover, .btn-sobre:active {
+        filter: drop-shadow(5px 5px 3px #1b4358);
+        -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
+    }
+    /* FIM DA TELA SOBRE */
 }

@@ -3,7 +3,7 @@
     $explode_url = explode("com.br/", $url);
     $pag_atual = $explode_url[1];
 
-    echo $pag_atual;
+    echo "link: ".$url;
 ?>
 
 <div class="header">

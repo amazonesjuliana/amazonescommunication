@@ -1,6 +1,7 @@
 <?php
     $url = $_SERVER['PHP_SELF'];
-    $pag_atual = substr($url,28);
+    $explode_url = explode("com.br/", $url);
+    $pag_atual = $explode_url[1];
 ?>
 
 <div class="header">

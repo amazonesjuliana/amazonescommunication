@@ -112,6 +112,15 @@ html, body {
     }
      /* FIM DO HEADER */
 
+     /* FUNDO DO SITE */
+     .fundo-site {
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+     }
+     /* FIM FUNDO DO SITE */
+
 
      /* INICIO DA HOME*/
     .conteudo-home {
@@ -185,21 +194,17 @@ html, body {
         width: 100%;
     }
 
-    .foto-juju {
-        left: 0;
-        bottom: 0;
+    .foto-juju {        
         width: 25%;
         z-index: 99;
-        position: absolute;
-        margin: 0 0 4% 8.2%;
+        position: relative;
+        margin: 3% 0 0 8.2%;
     }
 
-    .conteudo-sobre .textos-sobre {
-        left: 0;
-        top: 0;
+    .conteudo-sobre .textos-sobre {        
         z-index: 99;
-        margin: 11.3% 6% 0 35.2%;
-        position: absolute;
+        margin: -34.5% 6% 0 35.2%;
+        position: relative;
     }
 
     .textos-sobre p {
@@ -280,21 +285,25 @@ html, body {
     }
 
     .conteudo-portifolio .logos-portifolio {
-        left: 0;
-        right: 0;
-        gap: 20px;
-        bottom: 0;
-        width: 90%;
+        width: 100%;
         z-index: 99;       
+        height: 75%;
         display: flex;
-        flex-wrap: wrap;
-        position: absolute;
+        position: relative;
         align-items: center;
-        margin: 0 0 8% 5%;
         justify-content: center;
     }
 
-    .logos-portifolio .logo-cliente {
+    .logos-portifolio .cards {
+        gap: 20px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards .logo-cliente {
         width: 300px;
         height: 250px;
         display: flex;
@@ -309,4 +318,63 @@ html, body {
         width: 60%;
     }
     /* FIM DA TELA PORTIFOLIO */
+
+
+    /* INICIO DA TELA PARCEIROS */
+    .conteudo-parceiros {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .conteudo-parceiros img {
+        width: 100%;
+    }
+
+    .conteudo-parceiros .logos-parceiros {
+        width: 100%;
+        z-index: 99;       
+        height: 80%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logos-parceiros .cards {
+        gap: 20px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards .logo-parceiro {
+        width: 350px;
+        display: flex;
+        padding: 15px;
+        min-height: 600px;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        justify-content: flex-start;
+        border: 1px solid #a8a8a8;
+    }
+
+    .logo-parceiro img {
+        width: 100%;
+    }
+
+    .logo-parceiro p {
+        padding: 10px;
+        font-size: 21px;
+        margin-top: 20px;
+        color: #1b4358;
+        line-height: 35px;
+        font-weight: bold;
+        text-align: justify;
+    }
+    /* FIM DA TELA PARCEIROS */
 }

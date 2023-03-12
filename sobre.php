@@ -7,7 +7,7 @@
         <?php include("./assets/includes/header.php"); ?>
 
         <div class="conteudo-sobre">
-            <img src="./assets/images/fundo_site.jpg" alt="Mulher tecnológica">
+            <img src="./assets/images/fundo_site.jpg" alt="Fundo do site">
 
             <div class="foto-juju">
                 <img src="./assets/images/juliana-profissional.jpg" alt="Foto da profissional Juliana">

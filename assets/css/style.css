@@ -266,4 +266,47 @@ html, body {
         -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
     }
     /* FIM DA TELA SOBRE */
+
+
+    /* INICIO DA TELA PORTIFOLIO */
+    .conteudo-portifolio {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .conteudo-portifolio img {
+        width: 100%;
+    }
+
+    .conteudo-portifolio .logos-portifolio {
+        left: 0;
+        right: 0;
+        gap: 20px;
+        bottom: 0;
+        width: 90%;
+        z-index: 99;       
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        align-items: center;
+        margin: 0 0 8% 5%;
+        justify-content: center;
+    }
+
+    .logos-portifolio .logo-cliente {
+        width: 300px;
+        height: 250px;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #a8a8a8;
+    }
+
+    .logo-cliente img {
+        width: 60%;
+    }
+    /* FIM DA TELA PORTIFOLIO */
 }

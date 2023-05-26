@@ -34,18 +34,16 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100vh;
     overflow-x: hidden;
+}
+
+@media screen and (min-width: 800px){
+    
 }
 
 @media screen and (min-width: 1024px){
     /* INICIO DO HEADER */
-    .header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
     .header .logo-header {
         width: 15%;
         display: flex;
@@ -53,43 +51,11 @@ html, body {
         justify-content: center;
     }
 
-    .header .logo-header img {
-        width: 100%;
-    }
-
     .header .nav-header {
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .header .nav-header a {
-        font-size: 150%;
-        font-family: 'Myriad Pro';
-        font-weight: 500;
-        color: #1b4358;
-        text-decoration: none;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-
-    .header .nav-header span {
-        font-size: 250%;
-        font-family: 'Myriad Pro';
-        font-weight: lighter;
-        color: #dfdfdf;
-        margin: 0 50px;
-    }
-
-    .header .nav-header a:hover, .header .nav-header a:active {
-        transform: scale(1.1);
-        font-weight: bold;
-    }
-
-    .header .nav-header .pag-atual {
-        transform: scale(1.1);
-        font-weight: bold;
     }
 
     .header .idiomas-header {
@@ -105,276 +71,518 @@ html, body {
         cursor: pointer;
         transition: all 0.5s;
     }
-
-    .header .idiomas-header img:hover, .header .idiomas-header img:active {
-        -webkit-filter: drop-shadow(5px 3px 3px #1b4358);
-        filter: drop-shadow(5px 3px 3px #1b4358);
-    }
-     /* FIM DO HEADER */
-
-     /* FUNDO DO SITE */
-     .fundo-site {
-        bottom: 0;
-        z-index: -1;
-        width: 100%;
-        position: absolute;
-     }
-     /* FIM FUNDO DO SITE */
-
-
-     /* INICIO DA HOME*/
-    .conteudo-home {
-        width: 100%;
-        padding: 0;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .conteudo-home img {
-        width: 100%;
-    }
-
-    .conteudo-home .textos-home {
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        margin-right: 6.2%;
-        margin-bottom: 5.8%;
-        position: absolute;
-    }
-
-    .textos-home p {
-        color: #fff;
-        text-align: end;
-        font-family: "Myriad Pro";
-    }
-
-    #texto-home1 {
-        margin: 0 0 1% 0;
-        font-size: 315%;
-        font-weight: bold;
-    }
-
-    #texto-home2, #texto-home3 {
-        margin: 0;
-        padding: 0;
-        font-size: 220%;
-    }
-
-    .btn-home {
-        right: 0;
-        bottom: 0;
-        color: #1b4358;
-        font-size: 150%;
+    
+    .header .nav-header a {
+        font-size: 1.3em;
+        font-family: 'Myriad Pro';
         font-weight: 500;
-        margin: 0 6% 2% 0;
-        padding: 0.5% 2%;
-        position: absolute;
-        border-radius: 30px;
+        color: #1b4358;
         text-decoration: none;
-        background-color: #fff;
-        font-family: 'Aida Serifa';
         transition: all 0.5s;
+        cursor: pointer;
     }
-
-    .btn-home:hover, .btn-home:active {
-        filter: drop-shadow(5px 5px 3px #1b4358);
-        -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
+    
+    .header .nav-header span {
+        font-size: 2.3em;
+        font-family: 'Myriad Pro';
+        font-weight: lighter;
+        color: #dfdfdf;
+        margin: 0 1em;
     }
-    /* FIM DA HOME*/
+    /* FIM DO HEADER */
+}
 
-
-    /* INICIO DA TELA SOBRE */
-    .conteudo-sobre {
-        width: 100%;
-        padding: 0;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .conteudo-sobre img {
-        width: 100%;
-    }
-
-    .foto-juju {        
-        width: 25%;
-        z-index: 99;
-        position: relative;
-        margin: 3% 0 0 8.2%;
-    }
-
-    .conteudo-sobre .textos-sobre {        
-        z-index: 99;
-        margin: -34.5% 6% 0 35.2%;
-        position: relative;
-    }
-
-    .textos-sobre p {
-        color: #1b4358;
-        text-align: justify;
-        font-family: "Myriad Pro";
-    }
-
-    .titulos-sobre {
-        padding: 0;
-        font-size: 30px;
-        font-weight: bold;
-        margin: 0 0 10px 0;
-    }
-
-    .texto-sobre {
-        margin: 0;
-        padding: 0;
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .texto-sobre a {
-        color: #1b4358;
-        text-decoration: none;
-    }
-
-    .icones-sobre {
-        width: 100%;
+@media screen and (min-width: 1280px){
+    /* INICIO DO HEADER */
+    .header .logo-header {
+        width: 15%;
         display: flex;
-        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .nav-header {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .header .idiomas-header {
+        width: 10%;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
     }
 
-    .icones-sobre span {
-        width: 100%;
-    }
-
-    .icones-sobre span img {
-        width: 85%;
-    }
-
-    .btn-sobre {
-        right: 0;
-        bottom: 0;
-        color: #1b4358;
-        font-size: 24px;
-        font-weight: 500;
-        border: 1px solid #1b4358;
-        margin: 0 6% 2% 0;
-        padding: 10px 10px;
-        position: absolute;
-        border-radius: 2px;
-        text-decoration: none;
-        background-color: #fff;
-        font-family: 'Aida Serifa';
+    .header .idiomas-header img {
+        width: 28%;
+        cursor: pointer;
         transition: all 0.5s;
-        font-weight: 600;
     }
-
-    .btn-sobre:hover, .btn-sobre:active {
-        filter: drop-shadow(5px 5px 3px #1b4358);
-        -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
-    }
-    /* FIM DA TELA SOBRE */
-
-
-    /* INICIO DA TELA PORTIFOLIO */
-    .conteudo-portifolio {
-        width: 100%;
-        padding: 0;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .conteudo-portifolio img {
-        width: 100%;
-    }
-
-    .conteudo-portifolio .logos-portifolio {
-        width: 100%;
-        z-index: 99;       
-        height: 75%;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .logos-portifolio .cards {
-        gap: 20px;
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;        
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cards .logo-cliente {
-        width: 17%;
-        height: 250px;
-        display: flex;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        border: 1px solid #a8a8a8;
-    }
-
-    .logo-cliente img {
-        width: 60%;
-    }
-    /* FIM DA TELA PORTIFOLIO */
-
-
-    /* INICIO DA TELA PARCEIROS */
-    .conteudo-parceiros {
-        width: 100%;
-        padding: 0;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .conteudo-parceiros img {
-        width: 100%;
-    }
-
-    .conteudo-parceiros .logos-parceiros {
-        width: 100%;
-        z-index: 99;       
-        height: 80%;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .logos-parceiros .cards {
-        gap: 20px;
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;        
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cards .logo-parceiro {
-        width: 350px;
-        display: flex;
-        padding: 15px;
-        min-height: 600px;
-        border-radius: 10px;
-        align-items: center;
-        flex-direction: column;
-        background-color: #fff;
-        justify-content: flex-start;
-        border: 1px solid #a8a8a8;
-    }
-
-    .logo-parceiro img {
-        width: 100%;
-    }
-
-    .logo-parceiro p {
-        padding: 10px;
-        font-size: 21px;
-        margin-top: 20px;
+    
+    .header .nav-header a {
+        font-size: 1.3em;
+        font-family: 'Myriad Pro';
+        font-weight: 500;
         color: #1b4358;
-        line-height: 35px;
-        font-weight: bold;
-        text-align: justify;
+        text-decoration: none;
+        transition: all 0.5s;
+        cursor: pointer;
     }
-    /* FIM DA TELA PARCEIROS */
+    
+    .header .nav-header span {
+        font-size: 2.3em;
+        font-family: 'Myriad Pro';
+        font-weight: lighter;
+        color: #dfdfdf;
+        margin: 0 1em;
+    }
+    /* FIM DO HEADER */
 }
+
+@media screen and (min-width: 1400px){
+    /* INICIO DO HEADER */
+    .header .logo-header {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .nav-header {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .header .idiomas-header {
+        width: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header .idiomas-header img {
+        width: 28%;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .header .nav-header a {
+        font-size: 1.5em;
+        font-family: 'Myriad Pro';
+        font-weight: 500;
+        color: #1b4358;
+        text-decoration: none;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .header .nav-header span {
+        font-size: 2.5em;
+        font-family: 'Myriad Pro';
+        font-weight: lighter;
+        color: #dfdfdf;
+        margin: 0 1.5em;
+    }
+    /* FIM DO HEADER */
+}
+
+@media screen and (min-width: 1600px){
+    /* INICIO DO HEADER */
+    .header .logo-header {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .nav-header {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .header .idiomas-header {
+        width: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header .idiomas-header img {
+        width: 28%;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .header .nav-header a {
+        font-size: 1.5em;
+        font-family: 'Myriad Pro';
+        font-weight: 500;
+        color: #1b4358;
+        text-decoration: none;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .header .nav-header span {
+        font-size: 2.5em;
+        font-family: 'Myriad Pro';
+        font-weight: lighter;
+        color: #dfdfdf;
+        margin: 0 1.5em;
+    }
+    /* FIM DO HEADER */
+}
+
+@media screen and (min-width: 1920px){
+    /* INICIO DO HEADER */
+    .header .logo-header {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .nav-header {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .header .idiomas-header {
+        width: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header .idiomas-header img {
+        width: 28%;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .header .nav-header a {
+        font-size: 1.5em;
+        font-family: 'Myriad Pro';
+        font-weight: 500;
+        color: #1b4358;
+        text-decoration: none;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .header .nav-header span {
+        font-size: 2.5em;
+        font-family: 'Myriad Pro';
+        font-weight: lighter;
+        color: #dfdfdf;
+        margin: 0 1.5em;
+    }
+    /* FIM DO HEADER */
+}
+
+/* INICIO DO HEADER */
+.header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .logo-header img {
+    width: 100%;
+}
+
+.header .nav-header a:hover, .header .nav-header a:active {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.header .nav-header .pag-atual {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.header .idiomas-header img:hover, .header .idiomas-header img:active {
+    -webkit-filter: drop-shadow(5px 3px 3px #1b4358);
+    filter: drop-shadow(5px 3px 3px #1b4358);
+}
+/* FIM DO HEADER */
+
+/* FUNDO DO SITE */
+.fundo-site {
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+}
+/* FIM FUNDO DO SITE */
+
+
+/* INICIO DA HOME*/
+.conteudo-home {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+}
+
+.conteudo-home img {
+    width: 100%;
+}
+
+.conteudo-home .textos-home {
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    margin-right: 6.2%;
+    margin-bottom: 5.8%;
+    position: absolute;
+}
+
+.textos-home p {
+    color: #fff;
+    text-align: end;
+    font-family: "Myriad Pro";
+}
+
+#texto-home1 {
+    margin: 0 0 1% 0;
+    font-size: 315%;
+    font-weight: bold;
+}
+
+#texto-home2, #texto-home3 {
+    margin: 0;
+    padding: 0;
+    font-size: 220%;
+}
+
+.btn-home {
+    right: 0;
+    bottom: 0;
+    color: #1b4358;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0 6% 2% 0;
+    padding: 0.5% 2%;
+    position: absolute;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #fff;
+    font-family: 'Aida Serifa';
+    transition: all 0.5s;
+}
+
+.btn-home:hover, .btn-home:active {
+    filter: drop-shadow(5px 5px 3px #1b4358);
+    -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
+}
+/* FIM DA HOME*/
+
+
+/* INICIO DA TELA SOBRE */
+.conteudo-sobre {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+}
+
+.conteudo-sobre img {
+    width: 100%;
+}
+
+.foto-juju {        
+    width: 25%;
+    z-index: 99;
+    position: relative;
+    margin: 3% 0 0 8.2%;
+}
+
+.conteudo-sobre .textos-sobre {        
+    z-index: 99;
+    margin: -34.5% 6% 0 35.2%;
+    position: relative;
+}
+
+.textos-sobre p {
+    color: #1b4358;
+    text-align: justify;
+    font-family: "Myriad Pro";
+}
+
+.titulos-sobre {
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.texto-sobre {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.texto-sobre a {
+    color: #1b4358;
+    text-decoration: none;
+}
+
+.icones-sobre {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icones-sobre span {
+    width: 100%;
+}
+
+.icones-sobre span img {
+    width: 85%;
+}
+
+.btn-sobre {
+    right: 0;
+    bottom: 0;
+    color: #1b4358;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #1b4358;
+    margin: 0 6% 2% 0;
+    padding: 10px 10px;
+    position: absolute;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: #fff;
+    font-family: 'Aida Serifa';
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+.btn-sobre:hover, .btn-sobre:active {
+    filter: drop-shadow(5px 5px 3px #1b4358);
+    -webkit-filter: drop-shadow(5px 5px 3px #1b4358);
+}
+/* FIM DA TELA SOBRE */
+
+
+/* INICIO DA TELA PORTIFOLIO */
+.conteudo-portifolio {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+}
+
+.conteudo-portifolio img {
+    width: 100%;
+}
+
+.conteudo-portifolio .logos-portifolio {
+    width: 100%;
+    z-index: 99;       
+    height: 75%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-portifolio .cards {
+    gap: 20px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;        
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .logo-cliente {
+    width: 17%;
+    height: 250px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #a8a8a8;
+}
+
+.logo-cliente img {
+    width: 60%;
+}
+/* FIM DA TELA PORTIFOLIO */
+
+
+/* INICIO DA TELA PARCEIROS */
+.conteudo-parceiros {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+}
+
+.conteudo-parceiros img {
+    width: 100%;
+}
+
+.conteudo-parceiros .logos-parceiros {
+    width: 100%;
+    z-index: 99;       
+    height: 80%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-parceiros .cards {
+    gap: 20px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;        
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .logo-parceiro {
+    width: 350px;
+    display: flex;
+    padding: 15px;
+    min-height: 600px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: flex-start;
+    border: 1px solid #a8a8a8;
+}
+
+.logo-parceiro img {
+    width: 100%;
+}
+
+.logo-parceiro p {
+    padding: 10px;
+    font-size: 21px;
+    margin-top: 20px;
+    color: #1b4358;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: justify;
+}
+/* FIM DA TELA PARCEIROS */
